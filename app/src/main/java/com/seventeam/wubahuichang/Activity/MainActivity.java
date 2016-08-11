@@ -43,7 +43,7 @@ public class MainActivity extends FragmentActivity {
      * 选修卡文字
      *
      */
-    private String mTextArray[] = { "首页",  "搜索" ,"消息", "个人"};
+    private String mTextArray[] = { "首页",  "商城" ,"评价", "个人中心"};
     /**
      *
      *
