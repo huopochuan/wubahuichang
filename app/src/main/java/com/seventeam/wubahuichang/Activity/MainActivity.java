@@ -35,15 +35,15 @@ public class MainActivity extends FragmentActivity {
      * 存放图片数组
      *
      */
-    private int mImageArray[] = { R.drawable.back,
-            R.drawable.back, R.drawable.back,
-            R.drawable.back};
+    private int mImageArray[] = { R.drawable.tab_home_btn,
+            R.drawable.tab_square_btn,R.drawable.tab_message_btn, R.drawable.tab_selfinfo_btn
+         };
 
     /**
      * 选修卡文字
      *
      */
-    private String mTextArray[] = { "首页", "消息", "好友", "搜索" };
+    private String mTextArray[] = { "首页",  "搜索" ,"消息", "个人"};
     /**
      *
      *
@@ -72,7 +72,7 @@ public class MainActivity extends FragmentActivity {
                     .setIndicator(getTabItemView(i));
             // 将Tab按钮添加进Tab选项卡中
             mTabHost.addTab(tabSpec, mFragmentArray[i], null);
-//            // 设置Tab按钮的背景
+            // 设置Tab按钮的背景
             mTabHost.getTabWidget().getChildAt(i)
                     .setBackgroundResource(R.drawable.selector_tab_background);
         }
