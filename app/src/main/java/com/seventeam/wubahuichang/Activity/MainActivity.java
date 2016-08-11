@@ -2,7 +2,6 @@ package com.seventeam.wubahuichang.Activity;
 
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentTabHost;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,7 +9,9 @@ import android.widget.ImageView;
 import android.widget.TabHost;
 import android.widget.TextView;
 
+import com.seventeam.wubahuichang.Fragment.LookplaceFragment;
 import com.seventeam.wubahuichang.Fragment.PersonalFragment;
+import com.seventeam.wubahuichang.Fragment.WebFragment;
 import com.seventeam.wubahuichang.R;
 
 public class MainActivity extends FragmentActivity {
@@ -29,8 +30,8 @@ public class MainActivity extends FragmentActivity {
      * Fragment数组界面
      *
      */
-    private Class mFragmentArray[] = { PersonalFragment.class, PersonalFragment.class,
-            PersonalFragment.class, PersonalFragment.class};
+    private Class mFragmentArray[] = { LookplaceFragment.class, PersonalFragment.class,
+            WebFragment.class, PersonalFragment.class};
     /**
      * 存放图片数组
      *
@@ -43,7 +44,7 @@ public class MainActivity extends FragmentActivity {
      * 选修卡文字
      *
      */
-    private String mTextArray[] = { "首页",  "商城" ,"评价", "个人中心"};
+    private String mTextArray[] = { "找地",  "搜索" ,"消息", "个人"};
     /**
      *
      *
