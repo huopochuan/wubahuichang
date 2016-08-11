@@ -73,8 +73,8 @@ public class MainActivity extends FragmentActivity {
             // 将Tab按钮添加进Tab选项卡中
             mTabHost.addTab(tabSpec, mFragmentArray[i], null);
 //            // 设置Tab按钮的背景
-//            mTabHost.getTabWidget().getChildAt(i)
-//                    .setBackgroundResource(R.drawable.selector_tab_background);
+            mTabHost.getTabWidget().getChildAt(i)
+                    .setBackgroundResource(R.drawable.selector_tab_background);
         }
     }
 
