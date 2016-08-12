@@ -19,9 +19,8 @@
         </activity>
         <activity android:name=".Activity.LaunchActivity" />
         <activity android:name=".Activity.LoginActivity" />
-        <activity android:name=".Activity.SearchActivity">
-
-        </activity>
+        <activity android:name=".Activity.SearchActivity"></activity>
+        <activity android:name=".Activity.StrategyDetailActivity"></activity>
     </application>
 
 </manifest>

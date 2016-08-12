@@ -1,6 +1,6 @@
 package com.seventeam.wubahuichang.Fragment;
 
-import android.graphics.Color;
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -16,9 +16,11 @@ import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.seventeam.wubahuichang.Activity.StrategyDetailActivity;
 import com.seventeam.wubahuichang.Adapter.LookplaceListAdapter;
 import com.seventeam.wubahuichang.Adapter.LookplacePagerAdapter;
 import com.seventeam.wubahuichang.Adapter.PlaceItemDecoration;
+import com.seventeam.wubahuichang.Adapter.StrategyListAdapter;
 import com.seventeam.wubahuichang.Bean.LookplaceItemBean;
 import com.seventeam.wubahuichang.R;
 
@@ -31,8 +33,12 @@ import java.util.TimerTask;
 /**
  * create gengjiarong
  */
-public class StrategyFragment extends Fragment {
+public class StrategyFragment extends Fragment implements StrategyListAdapter.OnItemClickListener {
 
+    private EditText etLookPlaceSearch;
+    private RecyclerView rvStrategyList;
+    private StrategyListAdapter adapter;
+    private SparseArray<String> array;
 
     public StrategyFragment() {
     }
@@ -58,13 +64,31 @@ public class StrategyFragment extends Fragment {
     }
 
     private void initView(View view) {
+        etLookPlaceSearch = (EditText) view.findViewById(R.id.et_LookPlaceSearch);
+        rvStrategyList = (RecyclerView) view.findViewById(R.id.rv_StrategyList);
     }
 
-
     private void initData() {
+        array = new SparseArray<>();
+        for (int i = 0; i < 20; i++) {
+            array.put(i, i+"");
+        }
+        adapter = new StrategyListAdapter(array);
+
+
+        LinearLayoutManager llm = new LinearLayoutManager(getActivity());
+        llm.setOrientation(LinearLayoutManager.VERTICAL);
+        rvStrategyList.setLayoutManager(llm);
+        rvStrategyList.setAdapter(adapter);
+
     }
 
     private void initListenter() {
+        adapter.setOnItemClickListener(this);
     }
 
+    @Override
+    public void onItemClick(View view, int position) {
+        startActivity(new Intent(getActivity(), StrategyDetailActivity.class));
+    }
 }

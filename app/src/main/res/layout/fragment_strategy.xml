@@ -8,11 +8,22 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="地儿圈"
+                android:gravity="center"
+                android:textSize="20sp" />
+        </RelativeLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#22000000">
+            android:background="#1fac7f">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -24,6 +35,7 @@
                 <ImageView
                     android:layout_width="30dp"
                     android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
                     android:layout_gravity="center_vertical"
                     android:src="@mipmap/search" />
 
@@ -34,14 +46,16 @@
                     android:height="40dp"
                     android:background="@null"
                     android:drawablePadding="3dp"
-                    android:hint="搜索你的活动计划" />
+                    android:hint="我想举办的活动" />
             </LinearLayout>
         </LinearLayout>
 
         <android.support.v7.widget.RecyclerView
-            android:id="@+id/rv_LookPlaceList"
+            android:id="@+id/rv_StrategyList"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
     </LinearLayout>
 
 </FrameLayout>
