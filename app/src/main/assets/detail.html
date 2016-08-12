@@ -99,10 +99,12 @@
         .fix_line {
             position: fixed;
             bottom: 0;
-            margin:  30px 0px;
+            /*margin:  30px 0px;*/
+            padding : 20px 0;
             width: 100%;
             left: 0;
             text-align: center;
+            background: white;
         }
 
         .fix_line a {
@@ -137,6 +139,22 @@
         .vrOuter{
             position: relative;
         }
+        .field{
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            background: black;
+            display: none;
+            top: 0;
+            left: 0;
+        }
+        .field img{
+            width: 100%;
+            position: absolute;
+            margin: auto;
+            top: 0;
+            bottom: 0;
+        }
     </style>
 </head>
 <script>
@@ -165,7 +183,7 @@
     <p class="detail">北京市朝阳区麒麟新天地</p>
     <p class="detail">距离您52.6KM</p>
 </div>
-<div class="vrOuter" onclick="action.jsCallMethod('gif.html','VR')">
+<div class="vrOuter" onclick="pop()">
     <img src="img/gifbg.jpg" class="vr" alt="">
     <div class="vr_word">vr看场地</div>
 </div>
@@ -189,6 +207,9 @@
     <a href="javascript:;" onclick="action.jsCallMethod('changdibaojia.html','场地报价')" class="btn2">私人订制</a>
 </div>
 
+<div class="field">
+    <img src="img/gif.gif" alt="">
+</div>
 <script src="./js/jquery.min.js"></script>
 <script src="./js/unslider-min.js"></script>
 <script>
@@ -197,7 +218,15 @@
         $('.banner').unslider({
             autoplay: true
         });
-    })
+    });
+    $('.field').click(function () {
+        $('.field').hide();
+
+    });
+    function pop() {
+        console.log('dfd');
+        $('.field').show();
+    }
 </script>
 </body>
 </html>
