@@ -10,8 +10,7 @@
       android:id="@+id/img"
       android:layout_alignParentLeft="true"
       android:layout_width="150dp"
-      android:layout_height="100dp"
-      android:src="@drawable/cd"/>
+      android:layout_height="100dp" />
    <LinearLayout
        android:layout_marginLeft="10dp"
        android:layout_toRightOf="@+id/img"

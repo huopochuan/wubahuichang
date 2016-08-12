@@ -24,6 +24,9 @@ public class WebFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_web, container, false);
+        View v= inflater.inflate(R.layout.fragment_web, container, false);
+        mWebView=(HybridWebView)v.findViewById(R.id.webview);
+        mWebView.loadUrl("file:///android_asset/list.html");
+        return v;
     }
 }
