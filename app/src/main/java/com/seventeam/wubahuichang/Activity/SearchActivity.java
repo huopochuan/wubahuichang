@@ -53,6 +53,7 @@ public class SearchActivity extends FragmentActivity {
         mSelect4=new ViewRight(this);
         img_back=(ImageView)this.findViewById(R.id.img_back);
         tv_title=(TextView)this.findViewById(R.id.title);
+        tv_title.setText("发现场地");
         img_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
