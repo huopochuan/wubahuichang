@@ -148,7 +148,7 @@ public class LookplaceFragment extends Fragment implements ViewPager.OnPageChang
         imageArray.add(new LookplaceItemBean("家庭个人", R.mipmap.jiatinggeren));
 
         pagerAdapter = new LookplacePagerAdapter(viewArray);
-        listAdapter = new LookplaceListAdapter(imageArray);
+//        listAdapter = new LookplaceListAdapter(imageArray);
         vpLookPlace.setAdapter(pagerAdapter);
 
 //        LinearLayoutManager llm = new LinearLayoutManager(getActivity());
@@ -175,7 +175,7 @@ public class LookplaceFragment extends Fragment implements ViewPager.OnPageChang
 
     private void initListenter() {
         vpLookPlace.addOnPageChangeListener(this);
-        listAdapter.setOnItemClickListener(this);
+//        listAdapter.setOnItemClickListener(this);
         etLookPlaceSearch.setOnClickListener(this);
         ll_tuanjian.setOnClickListener(this);
         ll_juhui.setOnClickListener(this);
@@ -189,9 +189,6 @@ public class LookplaceFragment extends Fragment implements ViewPager.OnPageChang
 
     @Override
     public void onHiddenChanged(boolean hidden) {
-        if (hidden) {
-            timer.cancel();
-        }
     }
 
     @Override

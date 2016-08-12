@@ -107,7 +107,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
+                android:layout_height="90dp"
                 android:orientation="horizontal">
 
                 <LinearLayout
@@ -119,14 +119,14 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
                         android:src="@mipmap/zhanhui" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
+                        android:layout_marginTop="5dp"
                         android:gravity="center"
                         android:text="团建"
                         android:textColor="#2980b9"
@@ -142,14 +142,14 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
                         android:src="@mipmap/juhui" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
+                        android:layout_marginTop="5dp"
                         android:gravity="center"
                         android:text="聚会"
                         android:textColor="#f39c12"
@@ -165,14 +165,14 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
                         android:src="@mipmap/huiyi" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
+                        android:layout_marginTop="5dp"
                         android:gravity="center"
                         android:text="会议"
                         android:textColor="#16a085"
@@ -188,14 +188,14 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:layout_width="60dp"
-                        android:layout_height="60dp"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
                         android:src="@mipmap/shengri" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
+                        android:layout_marginTop="5dp"
                         android:gravity="center"
                         android:text="生日趴"
                         android:textColor="#c0392b"
@@ -218,18 +218,24 @@
                 android:id="@+id/iv_bottom1"
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
+                android:scaleType="fitXY"
+                android:layout_marginBottom="10dp"
                 android:src="@mipmap/zhongxiaoxinggongsi" />
 
             <ImageView
                 android:id="@+id/iv_bottom2"
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
+                android:scaleType="fitXY"
+                android:layout_marginBottom="10dp"
                 android:src="@mipmap/xiaoxingtuanti" />
 
             <ImageView
                 android:id="@+id/iv_bottom3"
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
+                android:scaleType="fitXY"
+                android:layout_marginBottom="10dp"
                 android:src="@mipmap/jiatinggeren" />
         </LinearLayout>
     </ScrollView>
