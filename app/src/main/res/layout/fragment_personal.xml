@@ -9,26 +9,141 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <TextView
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="#66255555">
+
+            <ImageView
+                android:id="@+id/iv_Photo"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginBottom="-10dp"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/ic_launcher" />
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_Photo"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="10dp"
+                android:text="登  录" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="我的\n余额"
+                android:background="#336644"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="我的\n红包"
+                android:background="#885566"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="#664433"
+                android:text="我的\n积分"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="40dp"
+                android:src="@mipmap/ic_launcher"
+                android:layout_height="40dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="我的预定"
+                android:gravity="center_vertical"
+                android:textSize="18sp"
+                android:paddingLeft="20dp"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="40dp"
+                android:src="@mipmap/ic_launcher"
+                android:layout_height="40dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="我的收藏"
+                android:gravity="center_vertical"
+                android:textSize="18sp"
+                android:paddingLeft="20dp"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="40dp"
+                android:src="@mipmap/ic_launcher"
+                android:layout_height="40dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="推荐给朋友"
+                android:gravity="center_vertical"
+                android:textSize="18sp"
+                android:paddingLeft="20dp"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="40dp"
+                android:src="@mipmap/ic_launcher"
+                android:layout_height="40dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="意见反馈"
+                android:gravity="center_vertical"
+                android:textSize="18sp"
+                android:paddingLeft="20dp"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="item 1" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="item 1" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="item 1" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="item 1" />
-
+            android:textSize="20dp"
+            android:text="退出登录"
+            android:layout_margin="10dp"
+            android:layout_marginTop="10dp"
+            android:background="#88ff0000"
+            />
     </LinearLayout>
 
 </FrameLayout>

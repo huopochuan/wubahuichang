@@ -2,7 +2,6 @@ package com.seventeam.wubahuichang.Activity;
 
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentTabHost;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,7 +9,10 @@ import android.widget.ImageView;
 import android.widget.TabHost;
 import android.widget.TextView;
 
+import com.seventeam.wubahuichang.Fragment.LookplaceFragment;
 import com.seventeam.wubahuichang.Fragment.PersonalFragment;
+import com.seventeam.wubahuichang.Fragment.StrategyFragment;
+import com.seventeam.wubahuichang.Fragment.WebFragment;
 import com.seventeam.wubahuichang.R;
 
 public class MainActivity extends FragmentActivity {
@@ -29,21 +31,21 @@ public class MainActivity extends FragmentActivity {
      * Fragment数组界面
      *
      */
-    private Class mFragmentArray[] = { PersonalFragment.class, PersonalFragment.class,
-            PersonalFragment.class, PersonalFragment.class};
+    private Class mFragmentArray[] = { LookplaceFragment.class, WebFragment.class,
+            StrategyFragment.class, PersonalFragment.class};
     /**
      * 存放图片数组
      *
      */
-    private int mImageArray[] = { R.drawable.back,
-            R.drawable.back, R.drawable.back,
-            R.drawable.back};
+    private int mImageArray[] = { R.drawable.tab_home_btn,
+            R.drawable.tab_square_btn,R.drawable.tab_message_btn, R.drawable.tab_selfinfo_btn
+         };
 
     /**
      * 选修卡文字
      *
      */
-    private String mTextArray[] = { "首页", "消息", "好友", "搜索" };
+    private String mTextArray[] = { "找地",  "搜索" ,"攻略", "个人"};
     /**
      *
      *
@@ -72,7 +74,7 @@ public class MainActivity extends FragmentActivity {
                     .setIndicator(getTabItemView(i));
             // 将Tab按钮添加进Tab选项卡中
             mTabHost.addTab(tabSpec, mFragmentArray[i], null);
-//            // 设置Tab按钮的背景
+            // 设置Tab按钮的背景
             mTabHost.getTabWidget().getChildAt(i)
                     .setBackgroundResource(R.drawable.selector_tab_background);
         }
