@@ -21,27 +21,7 @@
             padding: 0;
         }
 
-        .title_outer{
-            position: relative;
-        }
-        .title{
-            line-height: 55px;
-            background: #1fac7f;
-            text-align: center;
-            font-size: 22px;
-        }
-        .list_title{
-            position: absolute;
-            height: 100%;
-            top: 0;
 
-        }
-        .list_title.left{
-            left: 5%;
-        }
-        .list_title.right{
-            right: 10%;
-        }
 
         .img1 {
             width: 100%;
@@ -75,14 +55,11 @@
     resizeWindow();
 </script>
 <body>
-<div class="title_outer">
-    <img class="list_title left" src="img/list_left.png" alt="">
-    <div class="title">个性定制</div>
-</div>
+
 <img class="img1" src="img/list3_11.png" alt="">
 <div class="bot">
     <img class="img2" src="img/list3_bot.png" alt="">
-    <div class="btn" onclick="action.jsCallMethod('detail.html')"></div>
+    <div class="btn" onclick="action.jsCallMethod('detail.html','个性定制')"></div>
 </div>
 
 </body>

@@ -23,27 +23,7 @@
         .img1{
             width: 100%;
         }
-        .title_outer{
-            position: relative;
-        }
-        .title{
-            line-height: 55px;
-            background: #1fac7f;
-            text-align: center;
-            font-size: 22px;
-        }
-        .list_title{
-            position: absolute;
-            height: 100%;
-            top: 0;
 
-        }
-        .list_title.left{
-            left: 5%;
-        }
-        .list_title.right{
-            right: 10%;
-        }
         .item{
             border: 1px solid #1fac7f;
             box-sizing: border-box;
@@ -82,18 +62,13 @@
     resizeWindow();
 </script>
 <body>
-<div class="title_outer">
-    <img class="list_title left" src="img/list_left.png" alt="">
-    <div class="title">个性定制</div>
-    <img class="list_title right" src="img/list_right.png" alt="">
-</div>
 
 <img src="img/list1.png" alt="" class="img1">
 <a href="javascript:;" class="item">
     <img src="img/banner1.jpg" alt="">
     <div class="right">【正经】主持人</div>
 </a>
-<a href="javascript:;" class="item" onclick="action.jsCallMethod('list2.html')">
+<a href="javascript:;" class="item" onclick="action.jsCallMethod('list2.html','个性定制')">
     <img src="img/banner1.jpg" alt="">
     <div class="right">【文艺】沙画师</div>
 </a>
