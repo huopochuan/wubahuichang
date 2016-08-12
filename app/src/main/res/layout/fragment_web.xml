@@ -13,6 +13,7 @@
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:textColor="#ffffff"
+            android:textSize="20sp"
             android:text="个性定制"/>
     </RelativeLayout>
     <com.seventeam.wubahuichang.ExpandView.HybridWebView
