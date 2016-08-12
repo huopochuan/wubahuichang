@@ -189,6 +189,9 @@ public class LookplaceFragment extends Fragment implements ViewPager.OnPageChang
 
     @Override
     public void onHiddenChanged(boolean hidden) {
+        if (hidden) {
+            timer.cancel();
+        }
     }
 
     @Override
