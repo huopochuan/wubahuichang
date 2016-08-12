@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" id="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no,email=no,address=no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="中华英才">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <title>list</title>
+    <style>
+        body {
+            font: 16px/24px Microsoft YaHei, Helvetica, Tahoma;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .title {
+            line-height: 55px;
+            text-align: center;
+            font-size: 22px;
+        }
+
+        .img1 {
+            width: 100%;
+            height: 210px;
+
+        }
+
+        .owner, .list {
+            width: 95%;
+            margin: auto;
+            margin-top: 5px;
+            height: 210px;
+            border: 1px solid gray;
+        }
+
+        .owner .name {
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 25%;
+        }
+
+        .owner .btn {
+            width: 30%;
+            line-height: 30px;
+            background: orange;
+            color: white;
+            text-align: center;
+            border-radius: 5px;
+            margin: auto;
+            margin-top: 15%;
+        }
+
+        .list .item {
+            text-align: center;
+            line-height: 25px;
+        }
+
+        .list .name, .list a {
+            text-decoration: none;
+            display: inline-block;
+        }
+    </style>
+
+</head>
+<script>
+    function resizeWindow() {
+        var vt = document.getElementById('viewport');
+        var scale = document.documentElement.clientWidth / 375;
+        vt.setAttribute('content', "width=375,initial-scale=" + scale + ",user-scalable=no");
+    }
+    resizeWindow();
+</script>
+<body>
+<div class="title">创意拼搭</div>
+<img class="img1" src="img/list3_11.png" alt="">
+<div class="owner">
+    <div class="name">miss杨</div>
+    <div class="btn">免费预约</div>
+</div>
+<div class="list">
+    <div class="item">
+        <div class="name">历史活动</div>
+        <a href="javascript:;">历史场地</a>
+    </div>
+    <div class="item">
+        <div class="name">历史活动</div>
+        <a href="javascript:;">历史场地</a>
+    </div>
+</div>
+</body>
+</html>
