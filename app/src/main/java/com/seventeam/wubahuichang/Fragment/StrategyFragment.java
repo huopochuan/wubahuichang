@@ -16,6 +16,7 @@ import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.seventeam.wubahuichang.Activity.SearchActivity;
 import com.seventeam.wubahuichang.Activity.StrategyDetailActivity;
 import com.seventeam.wubahuichang.Adapter.LookplaceListAdapter;
 import com.seventeam.wubahuichang.Adapter.LookplacePagerAdapter;
@@ -33,12 +34,13 @@ import java.util.TimerTask;
 /**
  * create gengjiarong
  */
-public class StrategyFragment extends Fragment implements StrategyListAdapter.OnItemClickListener {
+public class StrategyFragment extends Fragment implements StrategyListAdapter.OnItemClickListener, View.OnClickListener {
 
     private EditText etLookPlaceSearch;
     private RecyclerView rvStrategyList;
     private StrategyListAdapter adapter;
     private SparseArray<String> array;
+    private EditText etStrategySearch;
 
     public StrategyFragment() {
     }
@@ -66,6 +68,7 @@ public class StrategyFragment extends Fragment implements StrategyListAdapter.On
     private void initView(View view) {
         etLookPlaceSearch = (EditText) view.findViewById(R.id.et_LookPlaceSearch);
         rvStrategyList = (RecyclerView) view.findViewById(R.id.rv_StrategyList);
+        etStrategySearch = (EditText) view.findViewById(R.id.et_StrategySearch);
     }
 
     private void initData() {
@@ -85,10 +88,20 @@ public class StrategyFragment extends Fragment implements StrategyListAdapter.On
 
     private void initListenter() {
         adapter.setOnItemClickListener(this);
+        etStrategySearch.setOnClickListener(this);
     }
 
     @Override
     public void onItemClick(View view, int position) {
         startActivity(new Intent(getActivity(), StrategyDetailActivity.class));
+    }
+
+    @Override
+    public void onClick(View view) {
+        switch (view.getId()) {
+            case R.id.et_StrategySearch:
+                startActivity(new Intent(getActivity(), SearchActivity.class));
+                break;
+        }
     }
 }

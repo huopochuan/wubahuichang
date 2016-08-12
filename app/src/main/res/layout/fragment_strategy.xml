@@ -42,7 +42,7 @@
                     android:src="@mipmap/search" />
 
                 <EditText
-                    android:id="@+id/et_LookPlaceSearch"
+                    android:id="@+id/et_StrategySearch"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:height="40dp"

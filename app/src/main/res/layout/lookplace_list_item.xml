@@ -7,8 +7,9 @@
 
     <ImageView
         android:id="@+id/iv_Item"
-        android:layout_width="200dp"
+        android:layout_width="match_parent"
         android:layout_height="150dp"
+        android:scaleType="fitXY"
         android:src="@mipmap/ic_launcher" />
 
 </LinearLayout>
