@@ -4,88 +4,235 @@
     android:layout_height="match_parent"
     tools:context="com.seventeam.wubahuichang.Fragment.PersonalFragment">
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:focusable="true"
-        android:focusableInTouchMode="true"
-        android:orientation="vertical">
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#1fac7f">
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:background="@drawable/border"
-                android:orientation="horizontal">
+                android:background="#1fac7f">
 
-                <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginLeft="10dp"
-                    android:src="@mipmap/search" />
-
-                <EditText
-                    android:id="@+id/et_LookPlaceSearch"
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:height="40dp"
-                    android:background="@null"
-                    android:drawablePadding="3dp"
-                    android:hint="搜索" />
+                    android:layout_margin="10dp"
+                    android:background="@drawable/border"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:src="@mipmap/search" />
+
+                    <EditText
+                        android:id="@+id/et_LookPlaceSearch"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:height="40dp"
+                        android:background="@null"
+                        android:drawablePadding="3dp"
+                        android:hint="搜索" />
+
+                    <View
+                        android:layout_width="1px"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="#000000" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="北京"
+                        android:textColor="#1fac7f"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="10dp"
+                        android:src="@mipmap/jiantou" />
+                </LinearLayout>
             </LinearLayout>
-        </LinearLayout>
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="150dp">
-
-            <android.support.v4.view.ViewPager
-                android:id="@+id/vp_LookPlace"
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="#33225456" />
+                android:layout_height="250dp">
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/vp_LookPlace"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="15dp"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/v_Dot1"
+                        android:layout_width="8dp"
+                        android:layout_height="8dp"
+                        android:src="@mipmap/white_dot" />
+
+                    <View
+                        android:id="@+id/v_Dot2"
+                        android:layout_width="8dp"
+                        android:layout_height="8dp"
+                        android:layout_marginLeft="10dp"
+                        android:src="@mipmap/white_dot" />
+
+                    <View
+                        android:id="@+id/v_Dot3"
+                        android:layout_width="8dp"
+                        android:layout_height="8dp"
+                        android:layout_marginLeft="10dp"
+                        android:src="@mipmap/white_dot" />
+                </LinearLayout>
+            </RelativeLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="10dp"
-                android:layout_alignParentBottom="true"
-                android:layout_marginBottom="15dp"
-                android:gravity="center">
+                android:layout_height="100dp"
+                android:orientation="horizontal">
 
-                <View
-                    android:id="@+id/v_Dot1"
-                    android:layout_width="8dp"
-                    android:layout_height="8dp"
-                    android:background="#000000" />
+                <LinearLayout
+                    android:id="@+id/ll_tuanjian"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
 
-                <View
-                    android:id="@+id/v_Dot2"
-                    android:layout_width="8dp"
-                    android:layout_height="8dp"
-                    android:layout_marginLeft="10dp"
-                    android:background="#22000000" />
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@mipmap/zhanhui" />
 
-                <View
-                    android:id="@+id/v_Dot3"
-                    android:layout_width="8dp"
-                    android:layout_height="8dp"
-                    android:layout_marginLeft="10dp"
-                    android:background="#22000000" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="团建"
+                        android:textColor="#2980b9"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_juhui"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@mipmap/juhui" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="聚会"
+                        android:textColor="#f39c12"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_huiyi"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@mipmap/huiyi" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="会议"
+                        android:textColor="#16a085"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_shengri"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@mipmap/shengri" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="生日趴"
+                        android:textColor="#c0392b"
+                        android:textSize="16sp" />
+                </LinearLayout>
             </LinearLayout>
-        </RelativeLayout>
 
-        <android.support.v7.widget.RecyclerView
-            android:id="@+id/rv_LookPlaceList"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginBottom="5dp"
+                android:background="#000000" />
 
-    </LinearLayout>
+            <!--<android.support.v7.widget.RecyclerView-->
+            <!--android:id="@+id/rv_LookPlaceList"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent" />-->
+
+            <ImageView
+                android:id="@+id/iv_bottom1"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:src="@mipmap/zhongxiaoxinggongsi" />
+
+            <ImageView
+                android:id="@+id/iv_bottom2"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:src="@mipmap/xiaoxingtuanti" />
+
+            <ImageView
+                android:id="@+id/iv_bottom3"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:src="@mipmap/jiatinggeren" />
+        </LinearLayout>
+    </ScrollView>
 
 </FrameLayout>
 

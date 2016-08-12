@@ -45,7 +45,7 @@ public class MainActivity extends FragmentActivity {
      * 选修卡文字
      *
      */
-    private String mTextArray[] = { "找地",  "搜索" ,"攻略", "个人"};
+    private String mTextArray[] = { "首页",  "个性订制" ,"地儿圈", "个人中心"};
     /**
      *
      *
@@ -74,9 +74,9 @@ public class MainActivity extends FragmentActivity {
                     .setIndicator(getTabItemView(i));
             // 将Tab按钮添加进Tab选项卡中
             mTabHost.addTab(tabSpec, mFragmentArray[i], null);
-            // 设置Tab按钮的背景
-            mTabHost.getTabWidget().getChildAt(i)
-                    .setBackgroundResource(R.drawable.selector_tab_background);
+//            // 设置Tab按钮的背景
+//            mTabHost.getTabWidget().getChildAt(i)
+//                    .setBackgroundResource(R.drawable.selector_tab_background);
         }
     }
 

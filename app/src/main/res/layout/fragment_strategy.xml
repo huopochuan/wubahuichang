@@ -7,6 +7,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="#1fac7f"
         android:orientation="vertical">
         <RelativeLayout
             android:layout_width="match_parent"
@@ -16,6 +17,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="地儿圈"
+                android:textColor="#ffffff"
                 android:gravity="center"
                 android:textSize="20sp" />
         </RelativeLayout>
@@ -23,7 +25,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#1fac7f">
+            android:background="#a9b7b7">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -40,7 +42,7 @@
                     android:src="@mipmap/search" />
 
                 <EditText
-                    android:id="@+id/et_LookPlaceSearch"
+                    android:id="@+id/et_StrategySearch"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:height="40dp"

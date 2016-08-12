@@ -17,11 +17,12 @@
 
             <RelativeLayout
                 android:layout_width="match_parent"
+                android:background="#1fac7f"
                 android:layout_height="50dp">
 
                 <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
                     android:layout_centerVertical="true"
                     android:layout_marginLeft="30dp"
                     android:src="@mipmap/collect" />
@@ -31,12 +32,14 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center"
+                    android:textColor="#ffffff"
                     android:text="轰趴"
                     android:textSize="20sp" />
 
                 <ImageView
-                    android:layout_width="110dp"
-                    android:layout_height="match_parent"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
                     android:layout_alignParentRight="true"
                     android:layout_marginRight="10dp"
                     android:src="@mipmap/right_icon" />
@@ -95,6 +98,7 @@
             android:text="去看场地"
             android:textColor="#ffffff"
             android:textSize="18sp" />
+        <!--#1fac7f-->
     </LinearLayout>
 
 
