@@ -132,11 +132,10 @@ public class LookplaceFragment extends Fragment implements ViewPager.OnPageChang
                 msg.what = UPDATE_PAGE;
 
                 msg.arg1 = (++autoCurrIndex) % 3;
-                msg.arg1 = 1;
                 handler.sendMessage(msg);
 
             }
-        }, 2000, 2000);
+        }, 3000, 3000);
     }
 
     private void initListenter() {

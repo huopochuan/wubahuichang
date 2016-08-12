@@ -16,6 +16,10 @@
             android:height="40dp"
             android:background="@drawable/border"
             android:drawablePadding="3dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
             android:hint="查找" />
 
         <RelativeLayout
