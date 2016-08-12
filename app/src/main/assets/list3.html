@@ -21,10 +21,26 @@
             padding: 0;
         }
 
-        .title {
+        .title_outer{
+            position: relative;
+        }
+        .title{
             line-height: 55px;
+            background: #1fac7f;
             text-align: center;
             font-size: 22px;
+        }
+        .list_title{
+            position: absolute;
+            height: 100%;
+            top: 0;
+
+        }
+        .list_title.left{
+            left: 5%;
+        }
+        .list_title.right{
+            right: 10%;
         }
 
         .img1 {
@@ -33,40 +49,19 @@
 
         }
 
-        .owner, .list {
-            width: 95%;
-            margin: auto;
-            margin-top: 5px;
-            height: 210px;
-            border: 1px solid gray;
+        .img2{
+            width: 100%;
         }
-
-        .owner .name {
-            font-size: 20px;
-            font-weight: bold;
-            text-align: center;
-            margin-top: 25%;
+        .bot{
+            position: relative;
         }
-
-        .owner .btn {
-            width: 30%;
-            line-height: 30px;
-            background: orange;
-            color: white;
-            text-align: center;
-            border-radius: 5px;
-            margin: auto;
-            margin-top: 15%;
-        }
-
-        .list .item {
-            text-align: center;
-            line-height: 25px;
-        }
-
-        .list .name, .list a {
-            text-decoration: none;
-            display: inline-block;
+        .btn{
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            bottom: 58px;
+            right: 7%;
+            z-index: 2;
         }
     </style>
 
@@ -80,21 +75,15 @@
     resizeWindow();
 </script>
 <body>
-<div class="title">创意拼搭</div>
+<div class="title_outer">
+    <img class="list_title left" src="img/list_left.png" alt="">
+    <div class="title">个性定制</div>
+</div>
 <img class="img1" src="img/list3_11.png" alt="">
-<div class="owner">
-    <div class="name">miss杨</div>
-    <div class="btn">免费预约</div>
+<div class="bot">
+    <img class="img2" src="img/list3_bot.png" alt="">
+    <div class="btn" onclick="action.jsCallMethod('detail.html')"></div>
 </div>
-<div class="list">
-    <div class="item">
-        <div class="name">历史活动</div>
-        <a href="javascript:;">历史场地</a>
-    </div>
-    <div class="item">
-        <div class="name">历史活动</div>
-        <a href="javascript:;">历史场地</a>
-    </div>
-</div>
+
 </body>
 </html>
