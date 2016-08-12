@@ -23,21 +23,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="list.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="list.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="416">
-              <caret line="45" column="9" selection-start-line="25" selection-start-column="7" selection-end-line="45" selection-end-column="9" />
+            <state relative-caret-position="176">
+              <caret line="22" column="9" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="list2.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="list2.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/list2.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="492">
-              <caret line="79" column="0" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
+            <state relative-caret-position="252">
+              <caret line="79" column="6" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -46,28 +46,8 @@
       <file leaf-file-name="list3.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/list3.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="444">
+            <state relative-caret-position="332">
               <caret line="80" column="0" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="detail.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/detail.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="103" column="7" selection-start-line="103" selection-start-column="7" selection-end-line="103" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="gif.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gif.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="94">
-              <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -92,9 +72,9 @@
         <option value="$PROJECT_DIR$/gif.html" />
         <option value="$PROJECT_DIR$/changdibaojia.html" />
         <option value="$PROJECT_DIR$/detail.html" />
-        <option value="$PROJECT_DIR$/list.html" />
-        <option value="$PROJECT_DIR$/list3.html" />
         <option value="$PROJECT_DIR$/list2.html" />
+        <option value="$PROJECT_DIR$/list3.html" />
+        <option value="$PROJECT_DIR$/list.html" />
       </list>
     </option>
   </component>
@@ -262,12 +242,12 @@
       <updated>1470926876327</updated>
       <workItem from="1470926877747" duration="6271000" />
       <workItem from="1470967234938" duration="13274000" />
-      <workItem from="1471008832271" duration="1825000" />
+      <workItem from="1471008832271" duration="2136000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21370000" />
+    <option name="totallyTimeSpent" value="21681000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="6" y="17" width="1077" height="738" extended-state="0" />
@@ -436,17 +416,7 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/img/list1.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/img/list_img4.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/img/list_img2.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
@@ -459,14 +429,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gif.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="94">
-          <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/detail.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
@@ -475,26 +437,49 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/list.html">
+    <entry file="file://$PROJECT_DIR$/list2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="45" column="9" selection-start-line="25" selection-start-column="7" selection-end-line="45" selection-end-column="9" />
+        <state relative-caret-position="252">
+          <caret line="79" column="6" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/gif.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-50">
+          <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/list_img2.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/list1.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/list3_11.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/list3.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="444">
+        <state relative-caret-position="332">
           <caret line="80" column="0" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/list2.html">
+    <entry file="file://$PROJECT_DIR$/list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="492">
-          <caret line="79" column="0" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
+        <state relative-caret-position="176">
+          <caret line="22" column="9" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
           <folding />
         </state>
       </provider>
