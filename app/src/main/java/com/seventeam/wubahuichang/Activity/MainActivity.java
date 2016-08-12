@@ -44,7 +44,7 @@ public class MainActivity extends FragmentActivity {
      * 选修卡文字
      *
      */
-    private String mTextArray[] = { "找地",  "搜索" ,"消息", "个人"};
+    private String mTextArray[] = { "找地",  "搜索" ,"攻略", "个人"};
     /**
      *
      *

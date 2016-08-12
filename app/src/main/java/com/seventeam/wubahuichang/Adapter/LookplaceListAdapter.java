@@ -18,6 +18,7 @@ import java.util.List;
 public class LookplaceListAdapter extends RecyclerView.Adapter<LookplaceListAdapter.VH> {
 
     private List<LookplaceItemBean> imageArray;
+    public OnItemClickListener onItemClickListener;
 
     public LookplaceListAdapter(List<LookplaceItemBean> array) {
         imageArray = array;
@@ -39,14 +40,31 @@ public class LookplaceListAdapter extends RecyclerView.Adapter<LookplaceListAdap
         holder.imageView.setImageResource(imageArray.get(position).imageId);
     }
 
-    static class VH extends RecyclerView.ViewHolder {
+    public void setOnItemClickListener(OnItemClickListener itemClickListener){
+        onItemClickListener = itemClickListener;
+    }
+
+
+    class VH extends RecyclerView.ViewHolder implements View.OnClickListener {
 
         public ImageView imageView;
 
         public VH(View itemView) {
             super(itemView);
             imageView = (ImageView) itemView.findViewById(R.id.iv_Item);
+            itemView.setOnClickListener(this);
         }
+
+        @Override
+        public void onClick(View view) {
+            if (onItemClickListener != null) {
+                onItemClickListener.onItemClick(itemView, getAdapterPosition());
+            }
+        }
+    }
+
+    public interface OnItemClickListener {
+        void onItemClick(View view, int position);
     }
 
 }

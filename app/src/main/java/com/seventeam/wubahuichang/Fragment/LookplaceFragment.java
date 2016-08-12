@@ -14,9 +14,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.seventeam.wubahuichang.Adapter.LookplaceListAdapter;
 import com.seventeam.wubahuichang.Adapter.LookplacePagerAdapter;
+import com.seventeam.wubahuichang.Adapter.PlaceItemDecoration;
 import com.seventeam.wubahuichang.Bean.LookplaceItemBean;
 import com.seventeam.wubahuichang.R;
 
@@ -29,7 +31,7 @@ import java.util.TimerTask;
 /**
  * create gengjiarong
  */
-public class LookplaceFragment extends Fragment implements ViewPager.OnPageChangeListener {
+public class LookplaceFragment extends Fragment implements ViewPager.OnPageChangeListener, LookplaceListAdapter.OnItemClickListener {
 
     public static final int UPDATE_PAGE = 1;
 
@@ -122,6 +124,8 @@ public class LookplaceFragment extends Fragment implements ViewPager.OnPageChang
         llm.setOrientation(LinearLayoutManager.VERTICAL);
         rvLookPlaceList.setLayoutManager(llm);
         rvLookPlaceList.setAdapter(listAdapter);
+        // 设置分割线
+        rvLookPlaceList.addItemDecoration(new PlaceItemDecoration(getActivity()));
 
         // 实现轮播
         timer = new Timer();
@@ -140,6 +144,7 @@ public class LookplaceFragment extends Fragment implements ViewPager.OnPageChang
 
     private void initListenter() {
         vpLookPlace.addOnPageChangeListener(this);
+        listAdapter.setOnItemClickListener(this);
     }
 
     @Override
@@ -179,4 +184,8 @@ public class LookplaceFragment extends Fragment implements ViewPager.OnPageChang
     public void onPageScrollStateChanged(int state) {
     }
 
+    @Override
+    public void onItemClick(View view, int position) {
+        Toast.makeText(getActivity(), "位置："+position, Toast.LENGTH_SHORT).show();
+    }
 }
