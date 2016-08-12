@@ -11,6 +11,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
     <title>list</title>
+    <link rel="stylesheet" href="./css/unslider.css">
+    <link rel="stylesheet" href="./css/unslider-dots.css">
     <style>
         body {
             font: 16px/24px Microsoft YaHei, Helvetica, Tahoma;
@@ -20,11 +22,24 @@
             margin: 0;
             padding: 0;
         }
-        .img1{
+        .banner img {
+            width: 100%;
+            height: 150px;
+        }
+        .unslider .unslider-nav {
+            bottom: 28px;
+            position: relative;
+        }
+
+        .unslider .next, .unslider .prev {
+            display: none;
+        }
+
+        .img1 {
             width: 100%;
         }
 
-        .item{
+        .item {
             border: 1px solid #1fac7f;
             box-sizing: border-box;
             color: black;
@@ -34,11 +49,13 @@
             text-decoration: none;
             margin-bottom: 13px;
         }
-        .item img{
+
+        .item img {
             height: 100%;
             width: 36%;
         }
-        .item .right{
+
+        .item .right {
             display: inline-block;
             box-sizing: border-box;
             padding: 24px 0 0 34px;
@@ -47,8 +64,11 @@
             height: 100%;
             vertical-align: top;
         }
-        .img2{
+
+
+        .img2 {
             width: 100%;
+            margin-top: -20px;
         }
     </style>
 
@@ -63,31 +83,48 @@
 </script>
 <body>
 
-<img src="img/list1.png" alt="" class="img1">
+<img src="img/search.jpg" alt="" class="img1">
+<div class="banner">
+    <ul>
+        <li><img src="img/list_bo1.png" alt=""></li>
+        <li><img src="img/list_bo2.png" alt=""></li>
+        <li><img src="img/list_bo3.png" alt=""></li>
+     </ul>
+</div>
+<img src="img/list1.png" alt="" class="img2">
+
 <a href="javascript:;" class="item">
-    <img src="img/banner1.jpg" alt="">
-    <div class="right">【正经】主持人</div>
+    <img src="img/list_vil.jpg" alt="">
+    <div class="right">小提琴手</div>
 </a>
 <a href="javascript:;" class="item" onclick="action.jsCallMethod('list2.html','个性定制')">
-    <img src="img/banner1.jpg" alt="">
-    <div class="right">【文艺】沙画师</div>
+    <img src="img/shahuashi.png" alt="">
+    <div class="right">沙画师</div>
 </a>
+
+<img src="img/list2.png" alt="" class="img1">
 <a href="javascript:;" class="item">
-    <img src="img/banner1.jpg" alt="">
-    <div class="right">【逗比】吉他手</div>
-</a>
-<img class="img2" src="img/list_img2.jpg" alt="">
-<a href="javascript:;" class="item">
-    <img src="img/banner1.jpg" alt="">
+    <img src="img/biaobai.jpg" alt="">
     <div class="right">创意表白</div>
 </a>
 <a href="javascript:;" class="item">
-    <img src="img/banner1.jpg" alt="">
-    <div class="right">创意寿宴</div>
+    <img src="img/huazhan.jpg" alt="">
+    <div class="right">个人画展</div>
 </a>
-<img class="img2" src="img/list_img3.jpg" alt="">
-<img class="img2" src="img/list_img4.jpg" alt="">
 
+<img src="img/list3.png" style="margin-bottom: -10px" class="img1" alt="">
+
+
+<script src="./js/jquery.min.js"></script>
+<script src="./js/unslider-min.js"></script>
+<script>
+    $(function () {
+
+        $('.banner').unslider({
+            autoplay: true
+        });
+    });
+</script>
 
 </body>
 </html>
