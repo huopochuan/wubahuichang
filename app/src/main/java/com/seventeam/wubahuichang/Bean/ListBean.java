@@ -7,6 +7,24 @@ public class ListBean {
     private int resid;
     private String title;
 
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public String getDistance() {
+        return distance;
+    }
+
+    public void setDistance(String distance) {
+        this.distance = distance;
+    }
+
+    private String type;
+    private String distance;
     public String getContent() {
         return content;
     }

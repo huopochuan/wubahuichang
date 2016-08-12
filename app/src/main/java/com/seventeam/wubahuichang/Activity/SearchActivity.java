@@ -51,9 +51,9 @@ public class SearchActivity extends FragmentActivity {
         mViewArray.add(mSelect2);
         mViewArray.add(mSelect3);
         mViewArray.add(mSelect4);
-        mSelect2.setData(new String[]{"0~100","100~200","300~400"});
-        mSelect3.setData(new String[]{"会议","party","生日宴会"});
-        mSelect4.setData(new String[]{"价格"});
+        mSelect2.setData(new String[]{"1~200","200~500","500~1000","1000~5000","5000元以上"});
+        mSelect3.setData(new String[]{"聚会paty","展会展览","公司团建","创意空间"});
+        mSelect4.setData(new String[]{"距离","评价","价格","类型"});
         ArrayList<String> mTextArray = new ArrayList<String>();
         mTextArray.add("选择区域");
         mTextArray.add("价格区间");
@@ -103,9 +103,36 @@ public class SearchActivity extends FragmentActivity {
          mData=new ArrayList<ListBean>();
         ListBean bean=new ListBean();
         bean.setResid(R.drawable.cd);
-        bean.setTitle("周末聚会来这呀");
-        bean.setContent("有各种各样的聚会活动呀");
+        bean.setTitle("北京私享文化中心");
+        bean.setContent("北京海淀区学院路");
+        bean.setType("经济型");
+        bean.setDistance("<800");
+
+        ListBean bean1=new ListBean();
+        bean1.setResid(R.drawable.cd);
+        bean1.setTitle("北京晚风亭");
+        bean1.setContent("北京通州区九棵树");
+        bean1.setType("四合院");
+        bean1.setDistance("1.5km");
+
+        ListBean bean2=new ListBean();
+        bean2.setResid(R.drawable.cd);
+        bean2.setTitle("北京游溪商务空间");
+        bean2.setContent("北京鼓楼大街");
+        bean2.setType("LOFT");
+        bean2.setDistance("3.5km");
+
+        ListBean bean3=new ListBean();
+        bean3.setResid(R.drawable.cd);
+        bean3.setTitle("北京竹亭宴会厅");
+        bean3.setContent("北京朝阳区望京西街");
+        bean3.setType("经济型");
+        bean3.setDistance("4km");
+
         mData.add(bean);
+        mData.add(bean1);
+        mData.add(bean2);
+        mData.add(bean3);
     }
 
     private void onRefresh(View view, String showText) {

@@ -52,6 +52,8 @@ public class ListAdapter extends BaseAdapter {
             holder.img = (ImageView)convertView.findViewById(R.id.img);
             holder.title = (TextView)convertView.findViewById(R.id.tv_title);
             holder.info = (TextView)convertView.findViewById(R.id.tv_content);
+            holder.type = (TextView)convertView.findViewById(R.id.tv_type);
+            holder.distance = (TextView)convertView.findViewById(R.id.tv_jl);
             //将设置好的布局保存到缓存中，并将其设置在Tag里，以便后面方便取出Tag
             convertView.setTag(holder);
         }else
@@ -61,7 +63,8 @@ public class ListAdapter extends BaseAdapter {
         holder.img.setBackgroundResource((Integer)mData.get(position).getResid());
         holder.title.setText((String)mData.get(position).getTitle());
         holder.info.setText((String)mData.get(position).getContent());
-
+        holder.type.setText((String)mData.get(position).getType());
+        holder.distance.setText((String)mData.get(position).getDistance());
         return convertView;
     }
 
@@ -69,5 +72,7 @@ public class ListAdapter extends BaseAdapter {
         ImageView img;
         TextView title;
         TextView info;
+        TextView type;
+        TextView distance;
     }
 }
