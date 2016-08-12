@@ -11,6 +11,7 @@ import android.widget.TextView;
 
 import com.seventeam.wubahuichang.Fragment.LookplaceFragment;
 import com.seventeam.wubahuichang.Fragment.PersonalFragment;
+import com.seventeam.wubahuichang.Fragment.StrategyFragment;
 import com.seventeam.wubahuichang.Fragment.WebFragment;
 import com.seventeam.wubahuichang.R;
 
@@ -30,8 +31,8 @@ public class MainActivity extends FragmentActivity {
      * Fragment数组界面
      *
      */
-    private Class mFragmentArray[] = { LookplaceFragment.class, PersonalFragment.class,
-            WebFragment.class, PersonalFragment.class};
+    private Class mFragmentArray[] = { LookplaceFragment.class, WebFragment.class,
+            StrategyFragment.class, PersonalFragment.class};
     /**
      * 存放图片数组
      *

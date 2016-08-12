@@ -9,18 +9,33 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <EditText
-            android:id="@+id/et_LookPlaceSearch"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:height="40dp"
-            android:background="@drawable/border"
-            android:drawablePadding="3dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="5dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:hint="查找" />
+            android:background="#22000000"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/border"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:src="@mipmap/search"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="30dp" />
+
+                <EditText
+                    android:id="@+id/et_LookPlaceSearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:height="40dp"
+                    android:background="@null"
+                    android:drawablePadding="3dp"
+                    android:hint="搜索" />
+            </LinearLayout>
+        </LinearLayout>
 
         <RelativeLayout
             android:layout_width="match_parent"
